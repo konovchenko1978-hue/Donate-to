@@ -74,7 +74,7 @@ grid.Parent = frame
 -- Create buttons from the list
 for _, item in ipairs(donations) do
 	local btn = Instance.new("TextButton")
-	btn.Text = item.amount .. " R\$"
+	btn.Text = item.amount .. " R$"
 	btn.BackgroundColor3 = Color3.fromRGB(0, 170, 100)
 	btn.TextColor3 = Color3.fromRGB(255, 255, 255)
 	btn.Font = Enum.Font.GothamBold
@@ -113,3 +113,9 @@ end
 ## Step 6: Publish and Share
 1. Go to **File** -> **Publish to Roblox** to save your changes.
 2. Make sure your game is set to **Public** in the Creator Dashboard so anyone can join and donate to you!
+
+## Important Notes
+* **30% Roblox Tax:** Roblox takes a 30% marketplace fee on all Developer Product sales, so you receive **70%** of every donation.
+* **1 Robux Donations:** Because Roblox rounds payouts down, 70% of `1 Robux` (`0.7`) rounds down to **0 Robux**. A donation must be at least **2 Robux** for you to receive 1 Robux.
+* **Pending Robux:** Donated Robux do not appear in your balance immediately. They go into **Pending Robux** first and usually take **5–7 days** to arrive. You can check them in your Roblox **My Transactions** page.
+* **Studio Testing:** Purchases made inside Roblox Studio test mode are fake and will not spend or add real Robux.
